@@ -1,8 +1,11 @@
 const listCategories = document.querySelector("#categories");
-console.log(`Number of categories: ${[...listCategories.children].length}`);
+const categories = Number([...listCategories.children].length);
+console.log(`Number of categories:`, categories);
 [...listCategories.children].forEach(item => {
-    console.log(`Category: ${item.firstElementChild.textContent}`);
-    console.log(`Elements: ${[...item.lastElementChild.children].length}`)
+    const category = item.firstElementChild.textContent;
+    const elements = Number([...item.lastElementChild.children].length);
+    console.log(`Category:`, category);
+    console.log(`Elements:`, elements);
 });
 
 
