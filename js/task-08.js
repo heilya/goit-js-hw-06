@@ -10,6 +10,6 @@ function onSubmit(evt) {
     if (email.value === "" || password.value === "") {
         alert("All fields are required to be completed!")
     }
-    console.log(`Login: ${email.value}, Password: ${password.value}`);
+    console.log(data);
     evt.currentTarget.reset();
 }

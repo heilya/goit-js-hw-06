@@ -12,4 +12,3 @@ console.log(`Number of categories: ${[...listCategories.children].length}`);
 
 
 
-
